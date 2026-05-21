@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iki Atelier — Legal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #fdfaf6;
+      color: #1a1a2e;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #1a1a2e;
+      color: #e8c9a0;
+      text-align: center;
+      padding: 48px 24px 36px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      color: #b89a78;
+      letter-spacing: 0.08em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      background: #f0e6d6;
+      border-bottom: 1px solid #d4b896;
+    }
+
+    nav a {
+      padding: 14px 28px;
+      text-decoration: none;
+      color: #1a1a2e;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      border-bottom-color: #c9973a;
+      color: #c9973a;
+    }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #1a1a2e;
+      margin-bottom: 28px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #d4b896;
+      letter-spacing: 0.05em;
+    }
+
+    h3 {
+      font-size: 1rem;
+      color: #c9973a;
+      margin: 32px 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin: 0 0 16px 20px;
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      background: #f0e6d6;
+      border-left: 3px solid #c9973a;
+      padding: 16px 20px;
+      margin: 24px 0;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.92rem;
+    }
+
+    .contact-box {
+      background: #1a1a2e;
+      color: #e8c9a0;
+      padding: 32px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 32px;
+    }
+
+    .contact-box h3 {
+      color: #e8c9a0;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .contact-box a {
+      color: #c9973a;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .contact-box p {
+      color: #b89a78;
+      font-size: 0.88rem;
+      margin-bottom: 0;
+    }
+
+    .updated {
+      font-size: 0.8rem;
+      color: #999;
+      margin-bottom: 32px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.78rem;
+      color: #999;
+      border-top: 1px solid #e8ddd0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Iki Atelier</h1>
+  <p>Tu asesor de moda personal con IA</p>
+</header>
+
+<nav>
+  <a href="#" class="active" onclick="show('privacy', this)">Privacidad</a>
+  <a href="#" onclick="show('terms', this)">Términos de uso</a>
+  <a href="#" onclick="show('contact', this)">Contacto</a>
+</nav>
+
+<main>
+
+  <!-- POLÍTICA DE PRIVACIDAD -->
+  <section id="privacy" class="active">
+    <p class="updated">Última actualización: mayo 2026</p>
+    <h2>Política de Privacidad</h2>
+
+    <p>En Iki Atelier nos tomamos en serio la privacidad de nuestros usuarios. Esta política explica qué datos recopilamos, cómo los usamos y cómo los protegemos.</p>
+
+    <h3>1. Datos que recopilamos</h3>
+    <ul>
+      <li><strong>Datos de cuenta:</strong> dirección de correo electrónico y nombre de usuario que proporcionas al registrarte.</li>
+      <li><strong>Fotos de prendas:</strong> las imágenes que capturas o subes para escanear tu armario. Estas fotos son procesadas por inteligencia artificial para identificar el tipo de prenda, color, patrón y otras características.</li>
+      <li><strong>Datos del armario:</strong> información sobre tus prendas (categoría, tipo, color, material, ajuste, formalidad, temporada).</li>
+      <li><strong>Fotos de outfits:</strong> imágenes que compartes para recibir asesoría de combinación o análisis de compra.</li>
+      <li><strong>Datos de uso:</strong> historial de análisis, racha del reto diario y preferencias dentro de la app.</li>
+      <li><strong>Datos de suscripción:</strong> plan activo y estado de pagos, gestionados por RevenueCat.</li>
+      <li><strong>Token de sesión:</strong> un identificador técnico para garantizar la seguridad de sesión única por dispositivo.</li>
+    </ul>
+
+    <h3>2. Cómo usamos tus datos</h3>
+    <ul>
+      <li>Proporcionar el servicio de asesoría de moda personalizada con IA.</li>
+      <li>Analizar las prendas de tu armario para generar combinaciones y recomendaciones.</li>
+      <li>Gestionar tu cuenta, suscripción y acceso a funciones según tu plan.</li>
+      <li>Mantener la seguridad de tu cuenta (sesión única por dispositivo).</li>
+      <li>Mejorar la precisión del servicio.</li>
+    </ul>
+
+    <h3>3. Fotografías e IA</h3>
+    <p>Las fotos que subes son enviadas a los servidores de Anthropic (Claude AI) exclusivamente para su análisis automático. <strong>No almacenamos tus fotos de forma permanente</strong> en nuestros sistemas una vez que el análisis ha sido procesado. Los datos extraídos de las fotos (tipo de prenda, color, etc.) sí se guardan en tu perfil.</p>
+
+    <h3>4. Terceros con acceso a tus datos</h3>
+    <ul>
+      <li><strong>Supabase</strong> — proveedor de base de datos, autenticación y almacenamiento seguro.</li>
+      <li><strong>Anthropic</strong> — motor de inteligencia artificial que analiza las imágenes. <a href="https://www.anthropic.com/privacy" target="_blank">Ver política de Anthropic</a>.</li>
+      <li><strong>RevenueCat</strong> — gestión de suscripciones y pagos. <a href="https://www.revenuecat.com/privacy" target="_blank">Ver política de RevenueCat</a>.</li>
+      <li><strong>Google</strong> — inicio de sesión mediante OAuth de Google. <a href="https://policies.google.com/privacy" target="_blank">Ver política de Google</a>.</li>
+    </ul>
+    <p>Ninguno de estos terceros vende tus datos ni los usa con fines publicitarios.</p>
+
+    <h3>5. Retención de datos</h3>
+    <p>Tus datos se conservan mientras mantengas una cuenta activa en Iki Atelier. Si eliminas tu cuenta, tus datos personales y de armario serán eliminados en un plazo de 30 días.</p>
+
+    <h3>6. Seguridad</h3>
+    <p>Todos los datos se transmiten mediante HTTPS. La autenticación está gestionada por Supabase con estándares de seguridad actuales. Implementamos sesión única por dispositivo para proteger tu cuenta ante accesos no autorizados.</p>
+
+    <h3>7. Tus derechos</h3>
+    <p>Tienes derecho a acceder, rectificar o eliminar tus datos en cualquier momento. Para ejercer estos derechos contáctanos en:</p>
+    <div class="highlight">
+      <strong>ikiatelierapp@gmail.com</strong>
+    </div>
+
+    <h3>8. Menores de edad</h3>
+    <p>Iki Atelier no está dirigido a menores de 13 años. No recopilamos conscientemente datos de menores de esa edad.</p>
+
+    <h3>9. Cambios en esta política</h3>
+    <p>Notificaremos cualquier cambio relevante a través de la app. El uso continuado de Iki Atelier tras la notificación implica la aceptación de los cambios.</p>
+  </section>
+
+  <!-- TÉRMINOS DE USO -->
+  <section id="terms">
+    <p class="updated">Última actualización: mayo 2026</p>
+    <h2>Términos de Uso</h2>
+
+    <p>Al usar Iki Atelier aceptas los siguientes términos. Por favor léelos con atención.</p>
+
+    <h3>1. El servicio</h3>
+    <p>Iki Atelier es una aplicación de asesoría de moda personal asistida por inteligencia artificial. Te permite escanear tu armario, recibir recomendaciones de combinación, analizar posibles compras y mantener un reto diario de outfits.</p>
+
+    <h3>2. Registro y cuenta</h3>
+    <ul>
+      <li>Debes proporcionar información veraz al crear tu cuenta.</li>
+      <li>Eres responsable de mantener la seguridad de tu contraseña.</li>
+      <li>Cada cuenta está asociada a un único dispositivo activo a la vez (sesión única). Si inicias sesión en otro dispositivo, la sesión anterior quedará invalidada.</li>
+    </ul>
+
+    <h3>3. Planes y suscripciones</h3>
+    <ul>
+      <li><strong>Plan Gratuito:</strong> acceso a 5 análisis de outfits totales sin fecha de expiración.</li>
+      <li><strong>Plan Básico ($2.99/mes):</strong> hasta 50 análisis de outfits mensuales, 1 sesión de escaneo de armario al mes y acceso al reto diario.</li>
+      <li><strong>Plan Pro ($7.99/mes):</strong> análisis de outfits ilimitados, 3 sesiones de escaneo de armario al mes y acceso completo a todas las funciones.</li>
+    </ul>
+
+    <div class="highlight">
+      <strong>Política de uso justo — Plan Pro:</strong> el plan Pro ofrece análisis ilimitados sujeto a una política de uso justo de hasta 500 análisis mensuales. Este límite está diseñado para uso personal normal y no afecta a prácticamente ningún usuario. Si llegas a este límite de forma legítima, contáctanos y lo ampliamos sin coste adicional.
+    </div>
+
+    <h3>4. Pagos y cancelaciones</h3>
+    <ul>
+      <li>Los pagos se procesan a través de Google Play Store y son gestionados por RevenueCat.</li>
+      <li>Puedes cancelar tu suscripción en cualquier momento desde la configuración de Google Play.</li>
+      <li>No realizamos reembolsos por períodos ya facturados salvo lo exigido por la normativa aplicable.</li>
+    </ul>
+
+    <h3>5. Uso aceptable</h3>
+    <ul>
+      <li>Iki Atelier es para uso personal y no comercial.</li>
+      <li>No está permitido compartir cuentas entre varias personas.</li>
+      <li>No está permitido usar la app para generar contenido con fines de reventa o distribución masiva.</li>
+      <li>No está permitido intentar acceder a funciones restringidas o manipular los límites del plan.</li>
+    </ul>
+
+    <h3>6. Contenido del usuario</h3>
+    <p>Las fotos que subes son tuyas. Nos otorgas una licencia limitada para procesarlas con el único fin de proporcionarte el servicio. No reclamamos propiedad sobre tu contenido.</p>
+
+    <h3>7. Limitación de responsabilidad</h3>
+    <p>Iki Atelier proporciona recomendaciones de moda generadas por IA con fines orientativos. No garantizamos resultados específicos. El servicio se ofrece "tal cual" y podemos modificarlo o interrumpirlo con previo aviso.</p>
+
+    <h3>8. Ley aplicable</h3>
+    <p>Estos términos se rigen por la legislación española y de la Unión Europea aplicable.</p>
+
+    <h3>9. Contacto</h3>
+    <p>Para cualquier consulta sobre estos términos:</p>
+    <div class="highlight">
+      <strong>ikiatelierapp@gmail.com</strong>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact">
+    <h2>Contacto y Soporte</h2>
+
+    <p>¿Tienes alguna pregunta, problema técnico o sugerencia? Estamos aquí para ayudarte.</p>
+
+    <div class="contact-box">
+      <h3>Soporte</h3>
+      <a href="mailto:ikiatelierapp@gmail.com">ikiatelierapp@gmail.com</a>
+      <p style="margin-top: 12px;">Respondemos en un plazo de 24–48 horas en días laborables.</p>
+    </div>
+
+    <h3 style="margin-top: 40px;">Puedes escribirnos para:</h3>
+    <ul>
+      <li>Problemas técnicos con la app</li>
+      <li>Preguntas sobre tu suscripción o facturación</li>
+      <li>Solicitar la eliminación de tu cuenta y datos</li>
+      <li>Cualquier consulta sobre privacidad</li>
+      <li>Sugerencias o feedback sobre el producto</li>
+    </ul>
+
+    <div class="highlight">
+      Para cancelar tu suscripción, hazlo directamente desde <strong>Google Play Store → Suscripciones</strong>. No es necesario contactarnos para cancelar.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Iki Atelier · <a href="#" onclick="show('privacy', document.querySelectorAll('nav a')[0])">Privacidad</a> · <a href="#" onclick="show('terms', document.querySelectorAll('nav a')[1])">Términos</a> · <a href="#" onclick="show('contact', document.querySelectorAll('nav a')[2])">Contacto</a>
+</footer>
+
+<script>
+  function show(sectionId, clickedLink) {
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+    document.getElementById(sectionId).classList.add('active');
+    if (clickedLink) clickedLink.classList.add('active');
+    return false;
+  }
+</script>
+
+</body>
+</html>
